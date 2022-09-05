@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="suO-pF-MMj">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,124 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ReasonsWhyLoveCats" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reasons to love cats " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ba8-xT-NU2">
+                                <rect key="frame" x="20" y="430" width="374" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PT0-2V-mSb">
+                                <rect key="frame" x="20" y="712" width="374" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="xyO-us-Vmf"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start">
+                                    <color key="baseForegroundColor" red="0.34901961679999999" green="0.33725491169999999" blue="0.47058826679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="lY0-Sp-hCZ" kind="show" id="5b2-7n-mPm"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.96470588450000005" green="0.78431367870000002" blue="0.86666667460000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PT0-2V-mSb" secondAttribute="bottom" constant="100" id="7DJ-J2-K6c"/>
+                            <constraint firstItem="Ba8-xT-NU2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8bC-7M-xDq"/>
+                            <constraint firstItem="PT0-2V-mSb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Tpy-Fh-Zl2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ba8-xT-NU2" secondAttribute="trailing" constant="20" id="c8W-Co-EPL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PT0-2V-mSb" secondAttribute="trailing" constant="20" id="kgx-Qn-VOn"/>
+                            <constraint firstItem="Ba8-xT-NU2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zhp-da-rjy"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="fPU-bI-P59"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="492.75362318840581" y="81.696428571428569"/>
+        </scene>
+        <!--Reasons-->
+        <scene sceneID="RtL-Ct-isg">
+            <objects>
+                <viewController id="lY0-Sp-hCZ" customClass="ReasonsViewController" customModule="ReasonsWhyLoveCats" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WG2-V1-Jod">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKu-IK-ury">
+                                <rect key="frame" x="20" y="397.5" width="374" height="101.5"/>
+                                <color key="backgroundColor" red="0.34901961679999999" green="0.33725491169999999" blue="0.47058826679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <string key="text">Many cats can find their way home despite long distances. According to experts, cats either understand where they are by the angle of sunlight or have magnetized cells in the brain that work as a compass.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lw1-YG-2F1">
+                                <rect key="frame" x="20" y="712" width="374" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9kE-0o-tPz"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next reason">
+                                    <color key="baseForegroundColor" red="0.34901961679999999" green="0.33725491169999999" blue="0.47058826679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="showNextReason:" destination="lY0-Sp-hCZ" eventType="touchUpInside" id="LvM-WO-iDX"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LoveCat" translatesAutoresizingMaskIntoConstraints="NO" id="9qO-at-ylr">
+                                <rect key="frame" x="41" y="129" width="332" height="201"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LVo-1a-v7Z"/>
+                        <color key="backgroundColor" red="0.96470588450000005" green="0.78431367870000002" blue="0.86666667460000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="nKu-IK-ury" firstAttribute="leading" secondItem="LVo-1a-v7Z" secondAttribute="leading" constant="20" id="0yV-ze-scV"/>
+                            <constraint firstItem="LVo-1a-v7Z" firstAttribute="trailing" secondItem="nKu-IK-ury" secondAttribute="trailing" constant="20" id="83C-8p-bPS"/>
+                            <constraint firstItem="lw1-YG-2F1" firstAttribute="leading" secondItem="LVo-1a-v7Z" secondAttribute="leading" constant="20" id="8Ld-ib-4pc"/>
+                            <constraint firstItem="LVo-1a-v7Z" firstAttribute="trailing" secondItem="lw1-YG-2F1" secondAttribute="trailing" constant="20" id="AuC-Bg-Mho"/>
+                            <constraint firstItem="nKu-IK-ury" firstAttribute="centerY" secondItem="WG2-V1-Jod" secondAttribute="centerY" id="HC9-EM-3np"/>
+                            <constraint firstItem="LVo-1a-v7Z" firstAttribute="bottom" secondItem="lw1-YG-2F1" secondAttribute="bottom" constant="100" id="MzJ-Kj-taB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Reasons" id="Vx1-gg-T7g"/>
+                    <connections>
+                        <outlet property="ReasonLabel" destination="nKu-IK-ury" id="bZ1-VX-Cbm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FdE-80-D0a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1153.6231884057972" y="81.696428571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="l9y-bt-ywM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="suO-pF-MMj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IrZ-lf-cpa">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="g62-tW-W6g"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yY1-Wl-saU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-314" y="82"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="LoveCat" width="617" height="486"/>
+    </resources>
 </document>
